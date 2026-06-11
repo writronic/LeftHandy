@@ -1,0 +1,474 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		LH10000100000001 /* LeftHandyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = LH00000100000001 /* LeftHandyApp.swift */; };
+		LH10000200000001 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = LH00000200000001 /* AppDelegate.swift */; };
+		LH10000300000001 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = LH00000300000001 /* AppConstants.swift */; };
+		LH10000400000001 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = LH00000400000001 /* Images.xcassets */; };
+		LH10000500000001 /* LoginItemService.swift in Sources */ = {isa = PBXBuildFile; fileRef = LH00001400000001 /* LoginItemService.swift */; };
+		LH10000600000001 /* MenuBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = LH00001500000001 /* MenuBarViewModel.swift */; };
+		LH10000700000001 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = LH00001600000001 /* AboutViewController.swift */; };
+		LH10000700000002 /* AboutWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = LH00001600000002 /* AboutWindowController.swift */; };
+		LH10000800000001 /* LHCursorDefs.m in Sources */ = {isa = PBXBuildFile; fileRef = LH00001800000001 /* LHCursorDefs.m */; };
+		LH10000900000001 /* LHCursorFlip.m in Sources */ = {isa = PBXBuildFile; fileRef = LH00001900000001 /* LHCursorFlip.m */; };
+		LH10001000000001 /* CursorFlipService.swift in Sources */ = {isa = PBXBuildFile; fileRef = LH00002000000001 /* CursorFlipService.swift */; };
+		LH10001100000001 /* LHMouseSwap.m in Sources */ = {isa = PBXBuildFile; fileRef = LH00002100000001 /* LHMouseSwap.m */; };
+		LH10001200000001 /* MouseSwapService.swift in Sources */ = {isa = PBXBuildFile; fileRef = LH00002200000001 /* MouseSwapService.swift */; };
+		LH10002500000001 /* PermissionStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = LH00002500000001 /* PermissionStatus.swift */; };
+		LH10002600000001 /* PermissionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = LH00002600000001 /* PermissionManager.swift */; };
+		LH10002700000001 /* FirstLaunchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = LH00002700000001 /* FirstLaunchManager.swift */; };
+		LH10002800000001 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = LH00002800000001 /* WelcomeViewController.swift */; };
+		LH10002900000001 /* WelcomeWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = LH00002900000001 /* WelcomeWindowController.swift */; };
+		LH10001400000001 /* PersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = LH00002400000001 /* PersistenceService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		LH00000100000001 /* LeftHandyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftHandyApp.swift; sourceTree = "<group>"; };
+		LH00000200000001 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		LH00000300000001 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		LH00000400000001 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		LH00000500000001 /* LeftHandy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LeftHandy-Info.plist"; sourceTree = "<group>"; };
+		LH00000600000001 /* LeftHandy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LeftHandy.entitlements; sourceTree = "<group>"; };
+		LH00000700000001 /* LeftHandy-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LeftHandy-Bridging-Header.h"; sourceTree = "<group>"; };
+		LH00000800000001 /* CGSPrivateConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGSPrivateConnection.h; sourceTree = "<group>"; };
+		LH00000900000001 /* CGSPrivateCursor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGSPrivateCursor.h; sourceTree = "<group>"; };
+		LH00001000000001 /* CGSPrivateAccessibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGSPrivateAccessibility.h; sourceTree = "<group>"; };
+		LH00001100000001 /* LHCursorFlip.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHCursorFlip.h; sourceTree = "<group>"; };
+		LH00001200000001 /* LHMouseSwap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHMouseSwap.h; sourceTree = "<group>"; };
+		LH00001300000001 /* LeftHandy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeftHandy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		LH00001400000001 /* LoginItemService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginItemService.swift; sourceTree = "<group>"; };
+		LH00001500000001 /* MenuBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarViewModel.swift; sourceTree = "<group>"; };
+		LH00001600000001 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		LH00001600000002 /* AboutWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutWindowController.swift; sourceTree = "<group>"; };
+		LH00001700000001 /* LHCursorDefs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHCursorDefs.h; sourceTree = "<group>"; };
+		LH00001800000001 /* LHCursorDefs.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHCursorDefs.m; sourceTree = "<group>"; };
+		LH00001900000001 /* LHCursorFlip.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHCursorFlip.m; sourceTree = "<group>"; };
+		LH00002000000001 /* CursorFlipService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CursorFlipService.swift; sourceTree = "<group>"; };
+		LH00002100000001 /* LHMouseSwap.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHMouseSwap.m; sourceTree = "<group>"; };
+		LH00002200000001 /* MouseSwapService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MouseSwapService.swift; sourceTree = "<group>"; };
+		LH00002500000001 /* PermissionStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionStatus.swift; sourceTree = "<group>"; };
+		LH00002600000001 /* PermissionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionManager.swift; sourceTree = "<group>"; };
+		LH00002700000001 /* FirstLaunchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstLaunchManager.swift; sourceTree = "<group>"; };
+		LH00002800000001 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		LH00002900000001 /* WelcomeWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeWindowController.swift; sourceTree = "<group>"; };
+		LH00002400000001 /* PersistenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		LH20000100000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		LH30000100000001 = {
+			isa = PBXGroup;
+			children = (
+				LH30000200000001 /* LeftHandy */,
+				LH30000300000001 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		LH30000200000001 /* LeftHandy */ = {
+			isa = PBXGroup;
+			children = (
+				LH00000500000001 /* LeftHandy-Info.plist */,
+				LH00000600000001 /* LeftHandy.entitlements */,
+				LH00000700000001 /* LeftHandy-Bridging-Header.h */,
+				LH00000400000001 /* Images.xcassets */,
+				LH30000400000001 /* SwiftUI */,
+				LH30000800000001 /* CursorEngine */,
+			);
+			path = LeftHandy;
+			sourceTree = "<group>";
+		};
+		LH30000300000001 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				LH00001300000001 /* LeftHandy.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		LH30000400000001 /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				LH00000100000001 /* LeftHandyApp.swift */,
+				LH00000200000001 /* AppDelegate.swift */,
+				LH30000500000001 /* Models */,
+				LH30000600000001 /* Views */,
+				LH30000700000001 /* ViewModels */,
+				LH30000B00000001 /* Services */,
+				LH30000C00000001 /* Utils */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
+		LH30000500000001 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				LH00000300000001 /* AppConstants.swift */,
+				LH00002500000001 /* PermissionStatus.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		LH30000600000001 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				LH00001600000001 /* AboutViewController.swift */,
+				LH00001600000002 /* AboutWindowController.swift */,
+				LH00002800000001 /* WelcomeViewController.swift */,
+				LH00002900000001 /* WelcomeWindowController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		LH30000700000001 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				LH00001500000001 /* MenuBarViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		LH30000800000001 /* CursorEngine */ = {
+			isa = PBXGroup;
+			children = (
+				LH30000900000001 /* CGSPrivateAPI */,
+				LH00001700000001 /* LHCursorDefs.h */,
+				LH00001800000001 /* LHCursorDefs.m */,
+				LH00001100000001 /* LHCursorFlip.h */,
+				LH00001900000001 /* LHCursorFlip.m */,
+				LH00001200000001 /* LHMouseSwap.h */,
+				LH00002100000001 /* LHMouseSwap.m */,
+			);
+			path = CursorEngine;
+			sourceTree = "<group>";
+		};
+		LH30000900000001 /* CGSPrivateAPI */ = {
+			isa = PBXGroup;
+			children = (
+				LH00000800000001 /* CGSPrivateConnection.h */,
+				LH00000900000001 /* CGSPrivateCursor.h */,
+				LH00001000000001 /* CGSPrivateAccessibility.h */,
+			);
+			path = CGSPrivateAPI;
+			sourceTree = "<group>";
+		};
+		LH30000B00000001 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				LH00002000000001 /* CursorFlipService.swift */,
+				LH00002700000001 /* FirstLaunchManager.swift */,
+				LH00001400000001 /* LoginItemService.swift */,
+				LH00002200000001 /* MouseSwapService.swift */,
+				LH00002400000001 /* PersistenceService.swift */,
+				LH00002600000001 /* PermissionManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		LH30000C00000001 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		LH40000100000001 /* LeftHandy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = LH60000300000001 /* Build configuration list for PBXNativeTarget "LeftHandy" */;
+			buildPhases = (
+				LH50000100000001 /* Sources */,
+				LH50000200000001 /* Resources */,
+				LH20000100000001 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LeftHandy;
+			productName = LeftHandy;
+			productReference = LH00001300000001 /* LeftHandy.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		LH70000100000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+				ORGANIZATIONNAME = Writronic;
+				TargetAttributes = {
+					LH40000100000001 = {
+						DevelopmentTeam = SP495GG2KZ;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = LH60000100000001 /* Build configuration list for PBXProject "LeftHandy" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = LH30000100000001;
+			productRefGroup = LH30000300000001 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				LH40000100000001 /* LeftHandy */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		LH50000200000001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				LH10000400000001 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		LH50000100000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				LH10000100000001 /* LeftHandyApp.swift in Sources */,
+				LH10000200000001 /* AppDelegate.swift in Sources */,
+				LH10000300000001 /* AppConstants.swift in Sources */,
+				LH10000500000001 /* LoginItemService.swift in Sources */,
+				LH10000600000001 /* MenuBarViewModel.swift in Sources */,
+				LH10000700000001 /* AboutViewController.swift in Sources */,
+				LH10000700000002 /* AboutWindowController.swift in Sources */,
+				LH10000800000001 /* LHCursorDefs.m in Sources */,
+				LH10000900000001 /* LHCursorFlip.m in Sources */,
+				LH10001000000001 /* CursorFlipService.swift in Sources */,
+				LH10001100000001 /* LHMouseSwap.m in Sources */,
+				LH10001200000001 /* MouseSwapService.swift in Sources */,
+				LH10001400000001 /* PersistenceService.swift in Sources */,
+				LH10002500000001 /* PermissionStatus.swift in Sources */,
+				LH10002600000001 /* PermissionManager.swift in Sources */,
+				LH10002700000001 /* FirstLaunchManager.swift in Sources */,
+				LH10002800000001 /* WelcomeViewController.swift in Sources */,
+				LH10002900000001 /* WelcomeWindowController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		LH80000100000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		LH80000200000001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		LH80000300000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LeftHandy/LeftHandy.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SP495GG2KZ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "LeftHandy/LeftHandy-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2026 Writronic. All rights reserved.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.writronic.lefthandy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "LeftHandy/LeftHandy-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		LH80000400000001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LeftHandy/LeftHandy.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SP495GG2KZ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "LeftHandy/LeftHandy-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2026 Writronic. All rights reserved.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.writronic.lefthandy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "LeftHandy/LeftHandy-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		LH60000100000001 /* Build configuration list for PBXProject "LeftHandy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				LH80000100000001 /* Debug */,
+				LH80000200000001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		LH60000300000001 /* Build configuration list for PBXNativeTarget "LeftHandy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				LH80000300000001 /* Debug */,
+				LH80000400000001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = LH70000100000001 /* Project object */;
+}
