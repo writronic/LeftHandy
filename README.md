@@ -16,6 +16,8 @@
 
 ---
 
+![LeftHandy menu bar app showing cursor flip and mouse button swap options](.github/src/screenshot.png)
+
 LeftHandy is a menu bar app that adds left-handed mouse and cursor support to your Mac.
 
 Requires **macOS 14 Sonoma** or later.

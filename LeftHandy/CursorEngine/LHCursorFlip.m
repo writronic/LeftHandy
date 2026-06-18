@@ -46,7 +46,8 @@ BOOL LHCursorRequiresFlip(NSString *identifier) {
             @"com.apple.cursor.35",
             @"com.apple.cursor.37",
             @"com.apple.cursor.30",
-            @"com.apple.cursor.34"
+            @"com.apple.cursor.34",
+            @"com.apple.coregraphics.Wait"
         ]];
     });
     return ![excludedFromFlip containsObject:identifier];
